@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Mathematics - ShadowCoder</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #0b0f1a;
+    color: white;
+}
+
+/* NAV BAR */
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background: #121a2a;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+.nav a:hover {
+    background: #00e5ff;
+    color: black;
+}
+
+/* HEADER */
+.header {
+    text-align: center;
+    padding: 30px;
+}
+
+.header h1 {
+    color: #00e5ff;
+    text-shadow: 0 0 10px #00e5ff;
+}
+
+/* SECTIONS */
+.section {
+    padding: 40px;
+}
+
+/* TOPIC BOX */
+.topic {
+    background: #121a2a;
+    margin: 12px 0;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #1f2a44;
+}
+
+.topic h3 {
+    color: #00e5ff;
+    margin-bottom: 10px;
+}
+
+.topic p {
+    margin: 5px 0;
+    color: #ccc;
+}
+
+/* DIAGRAMS */
+.diagram-center {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<div class="nav">
+    <a href="#notes">Notes</a>
+    <a href="#quizzes">Quizzes</a>
+    <a href="#higher">Higher Level</a>
+    <a href="#ordinary">Ordinary Level</a>
+    <a href="index.html">Home</a>
+</div>
+
+<!-- HEADER -->
+<div class="header">
+    <h1>Mathematics</h1>
+</div>
+
+<!-- NOTES -->
+<div class="section" id="notes">
+<h2>Notes</h2>
+
+<div class="topic">
+    <h3>Algebra</h3>
+    <p>Solving equations, expanding brackets, factorising.</p>
+    <p><b>Example:</b> 2x + 5 = 15 → x = 5</p>
+</div>
+
+<div class="topic">
+    <h3>Geometry</h3>
+    <p>Angles, shapes, area and volume.</p>
+
+    <p><b>Triangle Example:</b></p>
+
+    <div class="diagram-center">
+        <div style="width:0; height:0;
+            border-left:60px solid transparent;
+            border-right:60px solid transparent;
+            border-bottom:100px solid #00e5ff;">
+        </div>
+    </div>
+
+    <p><b>Formula:</b> Area = ½ × base × height</p>
+</div>
+
+<div class="topic">
+    <h3>Trigonometry</h3>
+    <p>Sine, cosine, tangent in right-angled triangles.</p>
+
+    <div class="diagram-center">
+        <svg width="160" height="140">
+            <polygon points="10,130 150,130 10,20"
+                     fill="none" stroke="#00e5ff" stroke-width="3"/>
+        </svg>
+    </div>
+
+    <p><b>Tip:</b> SOH CAH TOA</p>
+</div>
+
+<div class="topic">
+    <h3>Statistics</h3>
+    <p>Mean, median, mode, probability.</p>
+
+    <p><b>Bar Chart Example:</b></p>
+
+    <div class="diagram-center" style="height:120px; align-items:flex-end; display:flex; gap:10px;">
+        <div style="width:20px; height:40px; background:#00e5ff;"></div>
+        <div style="width:20px; height:80px; background:#00e5ff;"></div>
+        <div style="width:20px; height:60px; background:#00e5ff;"></div>
+        <div style="width:20px; height:100px; background:#00e5ff;"></div>
+    </div>
+</div>
+
+<div class="topic">
+    <h3>Functions</h3>
+    <p>Graphs and transformations.</p>
+
+    <div class="diagram-center">
+        <svg width="160" height="120">
+            <path d="M10,110 Q80,10 150,110"
+                  stroke="#00e5ff" fill="none" stroke-width="3"/>
+        </svg>
+    </div>
+
+    <p><b>Example:</b> y = x² parabola</p>
+</div>
+
+</div>
+
+<!-- QUIZZES -->
+<div class="section" id="quizzes">
+<h2>Quizzes</h2>
+
+<div class="topic">
+    <h3>Algebra Quiz</h3>
+    <p>Solve equations and simplify expressions.</p>
+</div>
+
+<div class="topic">
+    <h3>Mixed Maths Quiz</h3>
+    <p>Questions from all topics.</p>
+</div>
+
+</div>
+
+<!-- HIGHER LEVEL -->
+<div class="section" id="higher">
+<h2>Higher Level</h2>
+
+<div class="topic">
+    <h3>HL Algebra</h3>
+    <p>Advanced equations and factorisation.</p>
+</div>
+
+<div class="topic">
+    <h3>HL Trigonometry</h3>
+    <p>Sine rule and cosine rule problems.</p>
+</div>
+
+<div class="topic">
+    <h3>HL Functions</h3>
+    <p>Graph transformations and composites.</p>
+</div>
+
+</div>
+
+<!-- ORDINARY LEVEL -->
+<div class="section" id="ordinary">
+<h2>Ordinary Level</h2>
+
+<div class="topic">
+    <h3>OL Algebra</h3>
+    <p>Basic equations and rearranging formulas.</p>
+</div>
+
+<div class="topic">
+    <h3>OL Geometry</h3>
+    <p>Basic shapes, area and perimeter.</p>
+</div>
+
+</div>
+
+</body>
+</html>

@@ -1,29 +1,120 @@
-<!DOCTYPE html><html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="google-site-verification" content="74jeB81Teyea4sYk8T4kqkpSYNcc6Qqzb8FQm_upbg4" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ShadowCoder</title>
-<style>
-body{margin:0;font-family:Arial;background:#020617;color:#e2e8f0;}
-header{padding:20px;text-align:center;font-size:34px;color:#38bdf8;text-shadow:0 0 12px #38bdf8;}
-nav{display:flex;justify-content:center;gap:15px;background:#000;padding:10px;flex-wrap:wrap;}
-nav a{color:#38bdf8;text-decoration:none;font-weight:bold;}
-.card{max-width:900px;margin:20px auto;padding:20px;border:1px solid #38bdf8;border-radius:12px;box-shadow:0 0 12px #38bdf8;}
-.button{display:inline-block;padding:10px 18px;margin:10px;border:2px solid #38bdf8;color:#38bdf8;text-decoration:none;border-radius:8px;}
-</style>
-</head>
-<body>
-<header>ShadowCoder</header>
-<nav>
-<a href="index.html">Home</a>
-<a href="higher.html">Higher</a>
-<a href="ordinary.html">Ordinary</a>
-<a href="quiz.html">Exam Quiz</a>
-</nav>
-<div class="card">
-<h2>LC Computer Science Revision System</h2>
-<p>Full HL + OL structured notes with exam training system and topic-based quizzes.</p>
+<div class="card"
+	<div class="card" onclick="location.href='computer_science.html'">
+    <h2>Computer Science</h2>
+    <p>Algorithms, Programming, Databases, Logic Gates</p>
+    <div class="level">Higher + Ordinary Level</div>
 </div>
-</body>
+</div>
 
+<div class="card" onclick="location.href='maths.html'">
+    <h2>Maths</h2>
+    <p>Algebra, Geometry, Trigonometry, Calculus</p>
+    <div class="level">Higher + Ordinary Level</div>
+</div>
+
+<div class="card" onclick="location.href='english.html'">
+    <h2>English</h2>
+    <p>Essays, Poetry, Drama, Comprehensions</p>
+    <div class="level">Higher + Ordinary Level</div>
+</div>
+
+<div class="card" onclick="location.href='irish.html'">
+    <h2>Irish</h2>
+    <p>Oral, Grammar, Reading, Writing</p>
+    <div class="level">Higher + Ordinary Level</div>
+</div>
+
+<div class="card" onclick="location.href='biology.html'">
+    <h2>Biology</h2>
+    <p>Cells, Genetics, Ecology, Human Systems</p>
+    <div class="level">Higher + Ordinary Level</div>
+</div>
+
+<div class="card" onclick="location.href='chemistry.html'">
+    <h2>Chemistry</h2>
+    <p>Reactions, Experiments, Periodic Table</p>
+    <div class="level">Higher + Ordinary Level</div>
+</div>
+
+<div class="card" onclick="location.href='business.html'">
+    <h2>Business</h2>
+    <p>Enterprise, Finance, Economics</p>
+    <div class="level">Higher + Ordinary Level</div>
+</div>
+
+<div class="card" onclick="location.href='engineering.html'">
+    <h2>Engineering</h2>
+    <p>Design, Materials, Manufacturing</p>
+    <div class="level">Higher + Ordinary Level</div>
+</div>
+
+<div class="card" onclick="location.href='art.html'">
+    <h2>Art</h2>
+    <p>History, Sketching, Visual Studies</p>
+    <div class="level">Higher + Ordinary Level</div>
+</div>
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #e8f1ff, #f5faff);
+    color: #111;
+}
+
+/* HEADER */
+.header {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.header h1 {
+    font-size: 42px;
+    color: #007bff;
+    text-shadow: 0 0 8px rgba(0,123,255,0.4);
+}
+
+.header p {
+    color: #555;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    padding: 40px;
+}
+
+/* SUBJECT CARDS */
+.card {
+    background: white;
+    border-radius: 14px;
+    padding: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: center;
+    border: 1px solid #d0e3ff;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 123, 255, 0.2);
+    border-color: #007bff;
+}
+
+.card h2 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #666;
+    font-size: 14px;
+}
+
+.level {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #888;
+}
+</style>

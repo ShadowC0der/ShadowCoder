@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Subject - ShadowCoder</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #0b0f1a;
+    color: white;
+}
+
+/* NAV BAR */
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background: #121a2a;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    background: #00e5ff;
+    color: black;
+}
+
+/* HEADER */
+.header {
+    text-align: center;
+    padding: 30px;
+}
+
+.header h1 {
+    color: #00e5ff;
+    text-shadow: 0 0 10px #00e5ff;
+}
+
+/* SECTION */
+.section {
+    padding: 40px;
+}
+
+.topic {
+    background: #121a2a;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #1f2a44;
+}
+</style>
+</head>
+
+<body>
+
+<div class="nav">
+    <a href="#notes">Notes</a>
+    <a href="#quizzes">Quizzes</a>
+    <a href="#higher">Higher</a>
+    <a href="#ordinary">Ordinary</a>
+    <a href="index.html">Home</a>
+</div>
+
+<div class="header">
+    <h1>SUBJECT NAME</h1>
+</div>
+
+<div class="section" id="notes">
+<h2>Notes</h2>
+<div class="topic">Topic 1</div>
+<div class="topic">Topic 2</div>
+</div>
+
+<div class="section" id="quizzes">
+<h2>Quizzes</h2>
+<div class="topic">Topic Quiz</div>
+</div>
+
+<div class="section" id="higher">
+<h2>Higher Level</h2>
+<div class="topic">HL Topic</div>
+</div>
+
+<div class="section" id="ordinary">
+<h2>Ordinary Level</h2>
+<div class="topic">OL Topic</div>
+</div>
+
+</body>
+</html>
