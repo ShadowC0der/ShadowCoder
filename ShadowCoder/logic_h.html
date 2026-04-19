@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Logic Gates HL - ShadowCoder</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #020617;
+    color: #e2e8f0;
+}
+
+header {
+    padding: 25px;
+    text-align: center;
+    font-size: 32px;
+    color: #38bdf8;
+    text-shadow: 0 0 10px #38bdf8;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+.card {
+    border: 1px solid #38bdf8;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 0 12px #38bdf8;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #38bdf8;
+    padding: 8px;
+    text-align: center;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>Logic Gates (Higher Level)</header>
+
+<div class="container">
+
+<!-- DEFINITION -->
+<div class="card">
+<h2>📌 What are Logic Gates?</h2>
+<p>
+Logic gates are electronic components that take one or more binary inputs (0 or 1) and produce a single output based on a logical operation.
+</p>
+</div>
+
+<!-- BASIC GATES -->
+<div class="card">
+<h2>⚙️ Basic Logic Gates</h2>
+
+<h3>AND Gate</h3>
+<p>Output is 1 only if BOTH inputs are 1.</p>
+
+<h3>OR Gate</h3>
+<p>Output is 1 if at least ONE input is 1.</p>
+
+<h3>NOT Gate</h3>
+<p>Inverts the input (1 becomes 0, 0 becomes 1).</p>
+</div>
+
+<!-- TRUTH TABLE -->
+<div class="card">
+<h2>📊 Truth Tables</h2>
+
+<h3>AND Gate</h3>
+<table>
+<tr><th>A</th><th>B</th><th>Output</th></tr>
+<tr><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>1</td><td>1</td><td>1</td></tr>
+</table>
+
+<br>
+
+<h3>OR Gate</h3>
+<table>
+<tr><th>A</th><th>B</th><th>Output</th></tr>
+<tr><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>0</td><td>1</td><td>1</td></tr>
+<tr><td>1</td><td>0</td><td>1</td></tr>
+<tr><td>1</td><td>1</td><td>1</td></tr>
+</table>
+
+</div>
+
+<!-- COMBINATION LOGIC -->
+<div class="card">
+<h2>🔗 Combination Logic (HL)</h2>
+
+<p>
+Combination logic uses multiple gates together in one circuit.
+</p>
+
+<h3>Example:</h3>
+<p>
+(A AND B) OR C
+</p>
+
+<p>
+You solve it step-by-step:
+</p>
+<ul>
+<li>First solve AND gate</li>
+<li>Then apply OR gate to result</li>
+</ul>
+
+</div>
+
+<!-- EXAM QUESTIONS -->
+<div class="card">
+<h2>🧪 Exam Questions</h2>
+
+<p><b>Q1:</b> What is a logic gate? (3 marks)</p>
+<p><b>Answer:</b> A device that takes binary inputs and produces an output based on a logical rule.</p>
+
+<hr>
+
+<p><b>Q2:</b> Explain the AND gate. (4 marks)</p>
+<p><b>Answer:</b> The AND gate outputs 1 only when both inputs are 1. Otherwise it outputs 0.</p>
+
+<hr>
+
+<p><b>Q3:</b> Describe how to solve a combination circuit. (6 marks)</p>
+<p><b>Answer:</b> Solve each gate step by step, starting with inner brackets, then move outward until final output is found.</p>
+
+</div>
+
+<!-- EXAM TIPS -->
+<div class="card">
+<h2>🎯 Exam Tips</h2>
+<ul>
+<li>Always do truth tables step-by-step</li>
+<li>Start inside brackets first in combinations</li>
+<li>Clearly label inputs and outputs</li>
+<li>Show working — marks are for method, not just answer</li>
+</ul>
+</div>
+
+<a href="higher.html">← Back to Higher Level</a>
+
+</div>
+
+</body>
+</html>

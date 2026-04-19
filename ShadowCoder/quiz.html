@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exam Quiz - ShadowCoder</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #020617;
+    color: #e2e8f0;
+}
+
+/* HEADER */
+header {
+    padding: 25px;
+    text-align: center;
+    font-size: 32px;
+    color: #38bdf8;
+    text-shadow: 0 0 10px #38bdf8;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* BOX */
+.card {
+    border: 1px solid #38bdf8;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 0 12px #38bdf8;
+}
+
+/* INPUT */
+input {
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: none;
+}
+
+/* BUTTON */
+button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    border: 2px solid #38bdf8;
+    background: transparent;
+    color: #38bdf8;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #38bdf8;
+    color: #000;
+}
+
+/* SELECT */
+select {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>Exam Quiz System</header>
+
+<div class="container">
+<div class="card">
+
+<h2>Select Topic</h2>
+
+<select id="topic">
+    <option value="alg">Algorithms</option>
+    <option value="db">Databases</option>
+    <option value="logic">Logic Gates</option>
+    <option value="code">Coding</option>
+    <option value="ct">Computational Thinking</option>
+    <option value="hist">History of Computers</option>
+</select>
+
+<button onclick="startQuiz()">Start Quiz</button>
+
+<div id="quizArea"></div>
+<p id="score"></p>
+
+</div>
+</div>
+
+<script>
+const questions = {
+    alg: [
+        {q:"What is an algorithm?", a:"step"},
+        {q:"What does efficiency mean?", a:"time"}
+    ],
+    db: [
+        {q:"What is a primary key?", a:"unique"},
+        {q:"What is a foreign key?", a:"link"}
+    ],
+    logic: [
+        {q:"What does AND gate do?", a:"both"},
+        {q:"What does NOT gate do?", a:"invert"}
+    ],
+    code: [
+        {q:"What is input?", a:"data"},
+        {q:"What is output?", a:"result"}
+    ],
+    ct: [
+        {q:"Name a CT pillar", a:"decomposition"},
+        {q:"What is abstraction?", a:"ignore"}
+    ],
+    hist: [
+        {q:"First generation computers used?", a:"vacuum"},
+        {q:"Modern computers use?", a:"microprocessor"}
+    ]
+};
+
+let current = [];
+let index = 0;
+let score = 0;
+
+function startQuiz() {
+    let topic = document.getElementById("topic").value;
+    current = questions[topic];
+    index = 0;
+    score = 0;
+    loadQuestion();
+}
+
+function loadQuestion() {
+    if (index >= current.length) {
+        document.getElementById("quizArea").innerHTML = "Quiz Finished!";
+        document.getElementById("score").innerText = "Score: " + score + "/" + current.length;
+        return;
+    }
+
+    document.getElementById("quizArea").innerHTML = `
+        <p>${current[index].q}</p>
+        <input id="answer" placeholder="Type answer">
+        <button onclick="checkAnswer()">Submit</button>
+    `;
+}
+
+function checkAnswer() {
+    let user = document.getElementById("answer").value.toLowerCase();
+
+    if (user.includes(current[index].a)) {
+        score++;
+    }
+
+    index++;
+    loadQuestion();
+}
+
+</script>
+
+</body>
+</html>

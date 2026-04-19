@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Databases HL - ShadowCoder</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #020617;
+    color: #e2e8f0;
+}
+
+header {
+    padding: 25px;
+    text-align: center;
+    font-size: 32px;
+    color: #38bdf8;
+    text-shadow: 0 0 10px #38bdf8;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+.card {
+    border: 1px solid #38bdf8;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 0 12px #38bdf8;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-shadow: 0 0 8px #38bdf8;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>Databases (Higher Level)</header>
+
+<div class="container">
+
+<!-- DEFINITION -->
+<div class="card">
+<h2>📌 What is a Database?</h2>
+<p>
+A database is an <b>organised collection of related data</b> stored electronically so it can be easily accessed, managed, and updated.
+</p>
+</div>
+
+<!-- TABLE STRUCTURE -->
+<div class="card">
+<h2>📊 Tables, Records & Fields</h2>
+
+<ul>
+<li><b>Table:</b> Collection of related data</li>
+<li><b>Record:</b> One row in a table (one item/person)</li>
+<li><b>Field:</b> One piece of data (e.g. name, age)</li>
+</ul>
+
+</div>
+
+<!-- KEYS -->
+<div class="card">
+<h2>🔑 Keys in Databases</h2>
+
+<h3>Primary Key</h3>
+<p>
+A field that <b>uniquely identifies each record</b> in a table.
+</p>
+
+<h3>Foreign Key</h3>
+<p>
+A field that <b>links one table to another</b> by referencing a primary key.
+</p>
+
+</div>
+
+<!-- RELATIONSHIPS -->
+<div class="card">
+<h2>🔗 Relationships</h2>
+
+<ul>
+<li><b>One-to-One:</b> One record links to one record</li>
+<li><b>One-to-Many:</b> One record links to many records</li>
+<li><b>Many-to-Many:</b> Multiple records link to multiple records</li>
+</ul>
+
+</div>
+
+<!-- EXAMPLE -->
+<div class="card">
+<h2>💡 Example</h2>
+
+<p>
+Students table and Subjects table:
+</p>
+
+<ul>
+<li>StudentID (Primary Key)</li>
+<li>SubjectID (Primary Key)</li>
+<li>StudentID in Subjects = Foreign Key</li>
+</ul>
+
+</div>
+
+<!-- NORMALISATION -->
+<div class="card">
+<h2>📐 Normalisation (HL)</h2>
+
+<p>
+Normalisation is the process of organising data to reduce duplication and improve efficiency.
+</p>
+
+<ul>
+<li>Removes duplicate data</li>
+<li>Reduces errors</li>
+<li>Improves structure</li>
+</ul>
+
+</div>
+
+<!-- EXAM QUESTIONS -->
+<div class="card">
+<h2>🧪 Exam Questions</h2>
+
+<p><b>Q1:</b> Define a primary key. (3 marks)</p>
+<p><b>Answer:</b> A field that uniquely identifies each record in a table.</p>
+
+<hr>
+
+<p><b>Q2:</b> Explain the difference between a primary key and a foreign key. (6 marks)</p>
+<p><b>Answer:</b> A primary key uniquely identifies records in a table, while a foreign key is used to link two tables together by referencing a primary key.</p>
+
+</div>
+
+<!-- EXAM TIPS -->
+<div class="card">
+<h2>🎯 Exam Tips</h2>
+<ul>
+<li>Always say “uniquely identifies” for primary key</li>
+<li>Say “links tables together” for foreign key</li>
+<li>Use clear table examples for higher marks</li>
+<li>Structure answers: definition → explanation → example</li>
+</ul>
+</div>
+
+<a href="higher.html">← Back to Higher Level</a>
+
+</div>
+
+</body>
+</html>
